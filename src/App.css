@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fira Sans , Poppins;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(24, 24, 26);
+    color: #E4E6EE;
+}
+.select{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+.select-box{
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e0e0e0;
+    outline: none;
+    font-size: 15px;
+}
+.select-option{
+    font-size: 15px;
+    margin: 5px;
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+.grid-child{
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.news-image{
+    width: 100%;
+}
+.news-title-class{
+    font: 24px;
+    font-weight: 600;
+}
+.space-btw{
+    display: flex;
+    justify-content: space-between;
+}
+.news-content{
+    font: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news-author{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
 }
